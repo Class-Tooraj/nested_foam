@@ -7,7 +7,10 @@ __email__ = "Toorajjahangiri@gmail.com"
 from typing import Iterable
 
 # IMPORT BACKEND
-from ui_app.backend import key_maker
+try:
+    from ui_app.backend import key_maker
+except ImportError:
+    from backend import key_maker
 
 # IMPORT GUI MODULE
 from PySide6.QtCore import *

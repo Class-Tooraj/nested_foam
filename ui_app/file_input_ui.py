@@ -7,7 +7,10 @@ __email__ = "Toorajjahangiri@gmail.com"
 import os
 
 # IMPORT BACKEND
-from ui_app.backend import file_cipher
+try:
+    from ui_app.backend import file_cipher
+except ImportError:
+    from backend import file_cipher
 
 # IMPORT GUI MODULE
 from PySide6.QtCore import *

@@ -7,10 +7,16 @@ __email__ = "Toorajjahangiri@gmail.com"
 import os
 
 # IMPORT UI
-from ui_app.base_ui import Ui_MainWindow, QMainWindow, QApplication
-from ui_app.raw_input_ui import RawInputPage
-from ui_app.file_input_ui import FileInputPage
-from ui_app.key_maker_ui import KeyMakerPage
+try:
+    from ui_app.base_ui import Ui_MainWindow, QMainWindow
+    from ui_app.raw_input_ui import RawInputPage
+    from ui_app.file_input_ui import FileInputPage
+    from ui_app.key_maker_ui import KeyMakerPage
+except ImportError:
+    from base_ui import Ui_MainWindow, QMainWindow
+    from raw_input_ui import RawInputPage
+    from file_input_ui import FileInputPage
+    from key_maker_ui import KeyMakerPage
 
 
 # REMOVE TEMP FILE FROM TEMP DIRE
@@ -86,6 +92,7 @@ __dir__ = ('MainWindow',)
 
 if __name__ == "__main__":
     import sys
+    from base_ui import QApplication
     # APPLICATION
     app = QApplication(sys.argv)
     window = MainWindow()
