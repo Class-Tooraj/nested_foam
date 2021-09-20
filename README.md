@@ -26,6 +26,42 @@ Version = **0.3**
 
 ---
 
+### RUN
+
+After Install requirements
+
+```bash
+$ python3 main.py
+```
+
+If Import Issue Try this:
+
+1. Create **virtual environments**
+
+   ```bash
+   $ python3 -m venv ./nested_foam/venv
+   ```
+
+2. Activate **virtual environments**
+
+3. Install **requirements** to virtual environments
+
+4. Run With This Command in Bash
+
+   ```bash
+   $ ./nested_foam/venv/bin/python.exe main.py
+   ```
+
+   or in shell *windows*
+
+   ```shell
+   $ ./nested_foam/venv/script/python.exe main.py
+   ```
+
+   
+
+---
+
 ### Application
 
 > **Menu :**
