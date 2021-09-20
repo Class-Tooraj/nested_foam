@@ -1,0 +1,9 @@
+.vscode/
+.qt_for_python/
+test/
+test_file/
+venv/
+build/
+dist/
+*.egg-info/
+*.pyc
