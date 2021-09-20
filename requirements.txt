@@ -1,0 +1,2 @@
+PySide6==6.0.1
+nested_cipher==0.3
