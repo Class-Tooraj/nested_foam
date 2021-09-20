@@ -8,16 +8,24 @@ import sys
 import os
 
 # IMPORT GUI APPLICATION
-from PySide6.QtWidgets import QApplication
+from ui_app.base_ui import QApplication
 
 # IMPORT UI
-from ui_app import *
+from ui_app.main_ui import MainWindow
 
 # ADJUST QT FONT DPI FOR HIGHT SCALE AN 4K MONITOR
 os.environ["QT_FONT_DPI"] = "96"
 
+def init() -> int:
+    if os.path.exists('./__tmp__/'):
+        return 0
+    else:
+        os.mkdir('./__tmp__/')
+        return 1
 
 if __name__ == "__main__":
+    # CHECK TEMP DIR IF NOT EXISTS CREATE
+    init()
     # APPLICATION
     app = QApplication(sys.argv)
     window = MainWindow()
