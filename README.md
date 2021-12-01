@@ -1,3 +1,5 @@
+### INTHE NAME OF GOD
+
 # NESTED FOAM
 
 GUI Application - Encrypt and Decrypt Data
@@ -22,7 +24,7 @@ Version = **3.9.5**
 
 Package = **nested_cipher**
 
-Version = **0.3**
+Version = **0.4**
 
 ---
 
