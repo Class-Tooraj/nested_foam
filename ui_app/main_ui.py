@@ -1,7 +1,10 @@
-###########################################
-__author__ = "ToorajJahangiri"
-__email__ = "Toorajjahangiri@gmail.com"
-###########################################
+from __future__ import annotations
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> #
+#           < IN THE NAME OF GOD >           #
+# ------------------------------------------ #
+__AUTHOR__ = "ToorajJahangiri"
+__EMAIL__ = "Toorajjahangiri@gmail.com"
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< #
 
 # IMPORT STANDARD PACKAGE
 import os
@@ -18,6 +21,8 @@ except ImportError:
     from file_input_ui import FileInputPage
     from key_maker_ui import KeyMakerPage
 
+
+# \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\^////////////////////////////// #
 
 # REMOVE TEMP FILE FROM TEMP DIRE
 def remove_temp_file(tmp_dir_path: str, prefix: str = '', suffix: str = '') -> tuple[int, int]:

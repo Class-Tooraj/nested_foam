@@ -1,7 +1,10 @@
-###########################################
-__author__ = "ToorajJahangiri"
-__email__ = "Toorajjahangiri@gmail.com"
-###########################################
+from __future__ import annotations
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> #
+#           < IN THE NAME OF GOD >           #
+# ------------------------------------------ #
+__AUTHOR__ = "ToorajJahangiri"
+__EMAIL__ = "Toorajjahangiri@gmail.com"
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< #
 
 # IMPORT BACKEND
 try:
@@ -14,6 +17,7 @@ from PySide6.QtCore import *
 from PySide6.QtGui import *
 from PySide6.QtWidgets import *
 
+# \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\^////////////////////////////// #
 
 # BASE WIDGET INITIALIZE
 class Ui_Raw_Input(object):

@@ -1,7 +1,10 @@
-###########################################
-__author__ = "ToorajJahangiri"
-__email__ = "Toorajjahangiri@gmail.com"
-###########################################
+from __future__ import annotations
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> #
+#           < IN THE NAME OF GOD >           #
+# ------------------------------------------ #
+__AUTHOR__ = "ToorajJahangiri"
+__EMAIL__ = "Toorajjahangiri@gmail.com"
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< #
 
 # IMPORT
 import sys
@@ -12,6 +15,10 @@ from ui_app.base_ui import QApplication
 
 # IMPORT UI
 from ui_app.main_ui import MainWindow
+
+
+# \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\^////////////////////////////// #
+
 
 # ADJUST QT FONT DPI FOR HIGHT SCALE AN 4K MONITOR
 os.environ["QT_FONT_DPI"] = "96"

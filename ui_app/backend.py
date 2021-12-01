@@ -1,7 +1,10 @@
-###########################################
-__author__ = "ToorajJahangiri"
-__email__ = "Toorajjahangiri@gmail.com"
-###########################################
+from __future__ import annotations
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> #
+#           < IN THE NAME OF GOD >           #
+# ------------------------------------------ #
+__AUTHOR__ = "ToorajJahangiri"
+__EMAIL__ = "Toorajjahangiri@gmail.com"
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< #
 
 # IMPORT STANDARD PACKAGE
 import os
@@ -10,8 +13,10 @@ import random
 from typing import Iterable, Iterator
 
 # IMPORT CIPHER PACKAGE
-import nested_cipher
+import nested_cipher.b64 as nsb64
 
+
+# \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\^////////////////////////////// #
 
 
 # KEY MAKER
@@ -153,7 +158,7 @@ def text_cipher(method: str, mode: str, text: str, key: str = None, cipher_key_m
     if cipher_key_method is not None and cipher_key_method not in all_ci_method:
         raise NameError("Method Name Not Exists")
 
-    _nested_active = f'nested_cipher.{method}_{mode}'
+    _nested_active = f'nsb64.{method}_{mode}'
     _ex = eval(_nested_active)
 
     if key not in ('', ' ', None):
@@ -251,7 +256,7 @@ def file_cipher(method: str, mode: str, file_path_and_type: tuple[str, str], res
             try:
                 # Make Binarray File to String File
                 with open(_path, 'rb') as f, open(_tmp, 'w') as tf:
-                    _bin_to_string = nested_cipher.b64_encode(f.read())
+                    _bin_to_string = nsb64.b64_encode(f.read())
                     tf.write(_bin_to_string.decode('ascii'))
                 f.close()
                 tf.close()
@@ -284,7 +289,7 @@ def file_cipher(method: str, mode: str, file_path_and_type: tuple[str, str], res
 
                 # Raw Base64 To Source File
                 with open(_tmp, 'r') as f, open(result_file, 'wb') as of:
-                    _b64_to_source = nested_cipher.b64_decode(f.read())
+                    _b64_to_source = nsb64.b64_decode(f.read())
                     of.write(_b64_to_source)
                 f.close()
                 of.close()
